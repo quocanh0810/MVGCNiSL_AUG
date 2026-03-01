@@ -1,0 +1,48 @@
+{
+    "type": "feature",
+    "data_source": "Jurkat",
+    "threshold": -3,
+    "specific_graph": [
+        "SL"
+    ],
+    "indep_graph": [
+        "PPI-genetic",
+        "PPI-physical",
+        "co-exp",
+        "co-ess"
+    ],
+    "node_feats": "precomputed_aug",
+    "balanced": 1,
+    "pos_weight": 50,
+    "CCLE": 0,
+    "CCLE_dim": 64,
+    "node2vec_feats": 0,
+    "model": "GCN_pool",
+    "pooling": "max",
+    "LR": 0.0001,
+    "epochs": 1500,
+    "batch_size": 512,
+    "out_channels": 64,
+    "patience": 150,
+    "training_percent": 0.7,
+    "save_results": 1,
+    "split_method": "novel_pair",
+    "predict_novel_genes": 0,
+    "novel_cellline": "Jurkat",
+    "AUC": 0.8234345606019887,
+    "AUPR": 0.8463272791506433,
+    "precision@5": 1.0,
+    "precision@10": 1.0,
+    "lowest_error_pairs": [
+        "('LEO1', 'WDR61', 0.00013697147)",
+        "('FDPS', 'UBA2', 0.001251936)",
+        "('BNIP1', 'WDR61', 0.0026572347)",
+        "('GTF2H4', 'LEO1', 0.0027893186)",
+        "('CDC27', 'WDR61', 0.0028871298)",
+        "('BNIP1', 'LEO1', 0.0031356215)",
+        "('HUS1', 'UBA2', 0.006963551)",
+        "('LEO1', 'PDRG1', 0.01235944)",
+        "('ARL2', 'KIAA1731', 0.017288268)",
+        "('CTNNBL1', 'GEMIN4', 0.019301116)"
+    ]
+}

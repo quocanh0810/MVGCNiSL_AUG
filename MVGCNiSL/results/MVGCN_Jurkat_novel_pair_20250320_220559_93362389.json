@@ -1,0 +1,48 @@
+{
+    "type": "feature",
+    "data_source": "Jurkat",
+    "threshold": -3,
+    "specific_graph": [
+        "SL"
+    ],
+    "indep_graph": [
+        "PPI-genetic",
+        "PPI-physical",
+        "co-exp",
+        "co-ess"
+    ],
+    "node_feats": "precomputed_aug",
+    "balanced": 1,
+    "pos_weight": 50,
+    "CCLE": 0,
+    "CCLE_dim": 64,
+    "node2vec_feats": 0,
+    "model": "GCN_pool",
+    "pooling": "max",
+    "LR": 0.0001,
+    "epochs": 1500,
+    "batch_size": 512,
+    "out_channels": 64,
+    "patience": 150,
+    "training_percent": 0.7,
+    "save_results": 1,
+    "split_method": "novel_pair",
+    "predict_novel_genes": 0,
+    "novel_cellline": "Jurkat",
+    "AUC": 0.7984412792260145,
+    "AUPR": 0.8331202428721669,
+    "precision@5": 1.0,
+    "precision@10": 1.0,
+    "lowest_error_pairs": [
+        "('MRPL32', 'NUP85', 0.016322518)",
+        "('MRPS21', 'SEH1L', 0.027350655)",
+        "('TCF25', 'TUBGCP5', 0.031068403)",
+        "('MRPL13', 'MRPS35', 0.045251187)",
+        "('LIAS', 'PSMD4', 0.04739327)",
+        "('NUP54', 'PTCD3', 0.04964645)",
+        "('CHMP2A', 'RPL28', 0.05061306)",
+        "('AATF', 'PPCS', 0.053253707)",
+        "('NOLC1', 'TIMM22', 0.056450844)",
+        "('RFC4', 'RPL28', 0.070272066)"
+    ]
+}

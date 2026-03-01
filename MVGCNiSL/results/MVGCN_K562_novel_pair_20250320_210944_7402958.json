@@ -1,0 +1,48 @@
+{
+    "type": "feature",
+    "data_source": "K562",
+    "threshold": -3,
+    "specific_graph": [
+        "SL"
+    ],
+    "indep_graph": [
+        "PPI-genetic",
+        "PPI-physical",
+        "co-exp",
+        "co-ess"
+    ],
+    "node_feats": "precomputed_aug",
+    "balanced": 1,
+    "pos_weight": 50,
+    "CCLE": 0,
+    "CCLE_dim": 64,
+    "node2vec_feats": 0,
+    "model": "GCN_pool",
+    "pooling": "max",
+    "LR": 0.0001,
+    "epochs": 1500,
+    "batch_size": 512,
+    "out_channels": 64,
+    "patience": 150,
+    "training_percent": 0.7,
+    "save_results": 1,
+    "split_method": "novel_pair",
+    "predict_novel_genes": 0,
+    "novel_cellline": "Jurkat",
+    "AUC": 0.8364057443574817,
+    "AUPR": 0.8283966085231912,
+    "precision@5": 0.9354838709677419,
+    "precision@10": 0.9354838709677419,
+    "lowest_error_pairs": [
+        "('NAT10', 'RPTOR', 0.00078148046)",
+        "('NAT10', 'UQCRB', 0.0009888046)",
+        "('EEF1G', 'TGIF2', 0.0010815958)",
+        "('EEF1G', 'EXOSC6', 0.0025949504)",
+        "('MARS2', 'MRPL18', 0.0038533185)",
+        "('HYPK', 'RAD51', 0.005666511)",
+        "('PPCS', 'PTCD3', 0.0067442963)",
+        "('PDRG1', 'SLC7A6OS', 0.0067459126)",
+        "('KARS', 'KIF11', 0.007520419)",
+        "('NAT10', 'SKIV2L', 0.0080248015)"
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "type": "feature",
+    "data_source": "K562",
+    "threshold": -3,
+    "specific_graph": [
+        "SL"
+    ],
+    "indep_graph": [
+        "PPI-genetic",
+        "PPI-physical",
+        "co-exp",
+        "co-ess"
+    ],
+    "node_feats": "precomputed_aug",
+    "balanced": 1,
+    "pos_weight": 50,
+    "CCLE": 0,
+    "CCLE_dim": 64,
+    "node2vec_feats": 0,
+    "model": "GCN_pool",
+    "pooling": "max",
+    "LR": 0.0001,
+    "epochs": 1500,
+    "batch_size": 512,
+    "out_channels": 64,
+    "patience": 150,
+    "training_percent": 0.7,
+    "save_results": 1,
+    "split_method": "novel_pair",
+    "predict_novel_genes": 0,
+    "novel_cellline": "Jurkat",
+    "AUC": 0.8350203161671199,
+    "AUPR": 0.823255538410385,
+    "precision@5": 0.9032258064516129,
+    "precision@10": 0.9354838709677419,
+    "lowest_error_pairs": [
+        "('MRPS18A', 'MRPS9', 0.00038841733)",
+        "('PDRG1', 'SLC7A6OS', 0.0009191555)",
+        "('NFE2L1', 'TFB1M', 0.0012117518)",
+        "('MARS2', 'MRPL18', 0.0012702171)",
+        "('PDRG1', 'RPP30', 0.0018144881)",
+        "('MRPS25', 'TOMM22', 0.0019175265)",
+        "('NAT10', 'RPTOR', 0.002601027)",
+        "('NACA', 'NFE2L1', 0.0028791295)",
+        "('KARS', 'KIF11', 0.0038115236)",
+        "('NAA25', 'NDUFB1', 0.0039298446)"
+    ]
+}

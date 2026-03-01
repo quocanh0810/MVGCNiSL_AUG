@@ -1,0 +1,48 @@
+{
+    "type": "feature",
+    "data_source": "K562",
+    "threshold": -3,
+    "specific_graph": [
+        "SL"
+    ],
+    "indep_graph": [
+        "PPI-genetic",
+        "PPI-physical",
+        "co-exp",
+        "co-ess"
+    ],
+    "node_feats": "precomputed_aug",
+    "balanced": 1,
+    "pos_weight": 50,
+    "CCLE": 0,
+    "CCLE_dim": 64,
+    "node2vec_feats": 0,
+    "model": "GCN_pool",
+    "pooling": "max",
+    "LR": 0.0001,
+    "epochs": 1500,
+    "batch_size": 512,
+    "out_channels": 64,
+    "patience": 150,
+    "training_percent": 0.7,
+    "save_results": 1,
+    "split_method": "novel_pair",
+    "predict_novel_genes": 0,
+    "novel_cellline": "Jurkat",
+    "AUC": 0.8303780978277726,
+    "AUPR": 0.8245738780046611,
+    "precision@5": 0.9354838709677419,
+    "precision@10": 0.9193548387096774,
+    "lowest_error_pairs": [
+        "('NFE2L1', 'TFB1M', 0.00022301413)",
+        "('MARS2', 'MRPL18', 0.00045311358)",
+        "('HCCS', 'MRPL42', 0.00048827537)",
+        "('FDPS', 'HCCS', 0.0007626459)",
+        "('MRPS21', 'NAMPT', 0.00082927546)",
+        "('PDRG1', 'SLC7A6OS', 0.0011280075)",
+        "('NACA', 'NFE2L1', 0.0011573457)",
+        "('RNF20', 'RPL35', 0.0012716322)",
+        "('EEF1G', 'TGIF2', 0.0013415803)",
+        "('SFXN1', 'UBA3', 0.0015807383)"
+    ]
+}
